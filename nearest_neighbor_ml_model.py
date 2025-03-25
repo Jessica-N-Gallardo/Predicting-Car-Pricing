@@ -58,8 +58,8 @@ df = df[df['years_old'] != -1]
 df.head()
 
 #filter for only the top 20 car makes
-#top_20_makes = df['make_name'].value_counts().head(20).index  # Get top 20 car makes
-#df = df[df['make_name'].isin(top_20_makes)]  # Filter original DataFrame
+#top_20_makes = df['make_name'].value_counts().head(20).index  # Get only top 20 car makes ~ makes up about 90% of data
+#df = df[df['make_name'].isin(top_20_makes)]  # Filter og DataFrame
 
 """# Label Encoding"""
 
@@ -173,7 +173,7 @@ plt.ylabel('Predictions')
 
 #filter for only the top 20 car makes
 top_20_makes = df['make_name'].value_counts().head(20).index  # Get top 20 car makes
-df = df[df['make_name'].isin(top_20_makes)]  # Filter original DataFrame
+df = df[df['make_name'].isin(top_20_makes)]  # Filter og DataFrame
 
 """### Price Predictions"""
 
@@ -255,7 +255,7 @@ grid_search = GridSearchCV(
     estimator=KNeighborsRegressor(),
     param_grid=param_grid,
     cv=5,  # 5-fold cross-validation
-    scoring='neg_mean_absolute_error',  # You can also use 'r2'
+    scoring='neg_mean_absolute_error',  # You can also use r2
     n_jobs=-1  # Use all CPU cores for speed
 )
 
