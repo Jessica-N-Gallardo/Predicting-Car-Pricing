@@ -116,7 +116,7 @@ X_train = train_df[['body_type', 'daysonmarket', 'engine_displacement',
        'model_name', 'owner_count', 'salvage', 'savings_amount',
        'sp_name', 'theft_title', 'transmission', 'wheel_system_display',
        'wheelbase', 'width', 'year', 'years_old', 'option_count',
-       'original_price', 'yearly_depreciation', 'depreciation_per_mile']]
+       'yearly_depreciation', 'depreciation_per_mile']]
 y_train = train_df['price']
 
 X_test = test_df[['body_type', 'daysonmarket', 'engine_displacement',
@@ -127,7 +127,7 @@ X_test = test_df[['body_type', 'daysonmarket', 'engine_displacement',
        'model_name', 'owner_count', 'salvage', 'savings_amount',
        'sp_name', 'theft_title', 'transmission', 'wheel_system_display',
        'wheelbase', 'width', 'year', 'years_old', 'option_count',
-       'original_price', 'yearly_depreciation', 'depreciation_per_mile']]
+        'yearly_depreciation', 'depreciation_per_mile']]
 y_test = test_df['price']
 
 """## Scaling"""
@@ -187,7 +187,7 @@ X_train = train_df[['body_type', 'daysonmarket', 'engine_displacement',
        'model_name', 'owner_count', 'salvage',
        'sp_name', 'theft_title', 'transmission', 'wheel_system_display',
        'wheelbase', 'width', 'year', 'years_old', 'option_count',
-       'original_price', 'yearly_depreciation', 'depreciation_per_mile']]
+        'yearly_depreciation', 'depreciation_per_mile']]
 y_train = train_df['price']
 
 X_test = test_df[['body_type', 'daysonmarket', 'engine_displacement',
@@ -198,7 +198,7 @@ X_test = test_df[['body_type', 'daysonmarket', 'engine_displacement',
        'model_name', 'owner_count', 'salvage',
        'sp_name', 'theft_title', 'transmission', 'wheel_system_display',
        'wheelbase', 'width', 'year', 'years_old', 'option_count',
-       'original_price', 'yearly_depreciation', 'depreciation_per_mile']]
+        'yearly_depreciation', 'depreciation_per_mile']]
 y_test = test_df['price']
 
 #all columns except we didn't include savings_amount column
@@ -304,7 +304,7 @@ X_train = train_df[['body_type', 'price','engine_displacement',
        'model_name', 'owner_count', 'salvage', 'savings_amount',
        'sp_name', 'theft_title', 'transmission', 'wheel_system_display',
        'wheelbase', 'width', 'year', 'years_old', 'option_count',
-       'original_price', 'yearly_depreciation', 'depreciation_per_mile']]
+        'yearly_depreciation', 'depreciation_per_mile']]
 y_train = train_df['daysonmarket']
 
 X_test = test_df[['body_type', 'price', 'engine_displacement',
@@ -315,7 +315,7 @@ X_test = test_df[['body_type', 'price', 'engine_displacement',
        'model_name', 'owner_count', 'salvage', 'savings_amount',
        'sp_name', 'theft_title', 'transmission', 'wheel_system_display',
        'wheelbase', 'width', 'year', 'years_old', 'option_count',
-       'original_price', 'yearly_depreciation', 'depreciation_per_mile']]
+        'yearly_depreciation', 'depreciation_per_mile']]
 y_test = test_df['daysonmarket']
 
 knn_days_regr = KNeighborsRegressor()
